@@ -1,0 +1,107 @@
+header{
+    @include clearfix;
+    margin-bottom: 70px;
+}
+
+.login{
+    text-align: right;
+    line-height: 24px;
+    padding-top: 7px;
+    a{
+        color: #fff;
+        font-family: 'robotoregular';
+        line-height: 24px;
+    }
+    .line-v{
+        padding: 0 5px;
+    }
+}
+
+.logo{
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    a{
+        margin-right: 75px;
+    }
+}
+
+.nav{
+    float: right;
+    margin-top: 37px;
+    border-radius: 3px;
+    color: rgba(71,73,74,.2);
+    background-color: #0071bd; 
+    background-clip: padding-box; 
+    box-shadow: inset 0 1px 2px rgba(255,255,255,.5), 0 3px 0 #08436a; 
+    text-shadow: 0 1px 1px rgba(255,255,255,.5); 
+    line-height: 20px;
+    a{
+        color: #fff; 
+        font-size: 16px;
+        padding: 15px 35px;
+        display: inline-block;
+        font-family: "robotomedium";
+        background: url(images/nav-bg.png) no-repeat 0 center;
+        &:first-child{
+            background: none;
+        }
+    }
+}
+
+.page-title{
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-family: 'roboto_condensedregular';
+}
+
+.disclaim-cont{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'roboto_condensedlight';
+    padding-bottom: 60px;
+    p{
+        margin-bottom: 20px;
+    }
+}
+
+footer{
+    background-color: #0071bb;
+    margin-top: 35px;
+    min-height: 120px;
+    .wrap-inner{
+        position: relative;
+    }
+    .copyright,.bottom-nav{
+        font-family: 'robotoregular';
+        color: rgba(0,0,0,.7);
+        font-size: 10px;
+        -webkit-transform-origin: 100% 50%;
+        -webkit-transform: translate(-40px, 0) scale(0.8333);
+        position: absolute;
+        left: 0;
+        bottom: 25px;
+    }
+    .bottom-nav{
+        left: auto;
+        right: -40px;
+        a{
+            padding-left: 25px;
+            color: rgba(0,0,0,.7);
+            &:hover{
+                color: rgba(221,221,221,.7);
+            }
+        }
+    }
+    .logo-bottom{
+        text-align: center;
+        height: 120px;
+        line-height: 120px;
+        a:first-child{
+            margin-right: 25px;
+        }
+        img{
+            vertical-align: middle;
+        }
+    }
+}
