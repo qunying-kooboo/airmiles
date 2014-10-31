@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<!--[if IE 9]>     <html class="ie ie9 lte9">           <![endif]-->
+<!--[if gt IE 9]>  <html>                               <![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->
+
+    <head>
+        <!--#include file="inc/head-public.html" -->
+        <title>airmiles bevestiging</title>
+        <!--#include file="inc/head-script-link.html" -->
+    </head>
+
+    <body>
+        <div class="container">
+            <!--#include file="inc/header.html" -->
+            <div class="main">
+                <div class="wrap-inner">
+                    <!--#include file="wgt/bevestigning.html" -->
+                    <!--#include file="wgt/top-moment.html" --> 
+                </div>
+            </div>
+            <!--#include file="inc/footer.html" --> 
+        </div> 
+    </body>
+</html>
