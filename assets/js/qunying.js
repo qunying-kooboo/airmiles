@@ -32,4 +32,18 @@ $(function(){
                     }
     
     });
+
+    
+    /* Lightbox */
+    $('.fancybox').fancybox({
+        maxWidth    : 900,
+        maxHeight   : 600,
+        fitToView   : false,
+        width       : 'auto',
+        height      : 'auto',
+        autoSize    : false,
+        closeClick  : false,
+        openEffect  : 'none',
+        closeEffect : 'none'
+    });
 })
