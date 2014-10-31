@@ -46,6 +46,9 @@ header{
         &:first-child{
             background: none;
         }
+        &:hover, &.current{
+            color: #2c2e30;
+        }
     }
 }
 
@@ -71,6 +74,7 @@ footer{
     min-height: 120px;
     .wrap-inner{
         position: relative;
+        background: url(images/shadow-footer.png) no-repeat center top;
     }
     .copyright,.bottom-nav{
         font-family: 'robotoregular';
@@ -103,5 +107,149 @@ footer{
         img{
             vertical-align: middle;
         }
+    }
+}
+
+.main{
+    .wrap-inner{
+        @include clearfix;
+    }
+}
+
+.wgt-block{
+    width: 464px;
+    float: right;
+    font-size: 14px;
+    font-family: 'roboto_condensedlight';
+    .page-title{
+        font-size: 22px;
+    }
+    .tip-title{
+        line-height: 24px;
+        margin-bottom: 45px;
+        a{
+            color: #0072bd;
+        }
+    }
+}
+
+.bevestiging-wgt{
+    min-height: 350px;
+    .page-title{
+        margin-bottom: 20px;
+    }
+    .tip-title{
+        margin-bottom: 25px;
+    }
+    .tip-title2{
+        letter-spacing: -0.01px;
+    }
+}
+
+.top-moment{
+    clear: both;
+    @include clearfix;
+    margin-bottom: 5px;
+    ul{
+        margin-left: -23px;
+        margin-right: -23px;
+        li{
+            float: left;
+            background: url(../assets/images/shadow-bg1.png) no-repeat center bottom;
+            padding:0 23px 25px;
+        }
+    }
+    .page-title{
+        line-height: 20px;
+        margin-bottom: 45px;
+    }
+}
+
+.home-wgt{
+    padding-top: 85px;
+    min-height: 360px;
+    .title{
+        font-size: 38px;
+        line-height: 38px;
+        margin-bottom: 20px;
+        font-family: 'roboto_condensedregular';
+    }
+    .p{
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'roboto_condensedlight';
+    }
+    .button{
+        margin-top: 65px;
+    }
+}
+
+.insisselen-wgt{
+    .ticket{
+        line-height: 36px;
+        .ticket-box{
+            float: left;
+            position: relative;
+            width: 115px;
+            background-color: #fff;
+            border-radius: 3px;
+            height: 36px;
+            margin-bottom: 8px;
+            .input-text{
+                border:0 none;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                float: left;
+                border-right: solid 1px #e5e5e5;
+                width: 76px;
+                margin-bottom: 0;
+                padding: 7px 10px;
+                font-family: 'robotobold';
+                color: #000;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .plus,.minus{
+                border: solid 4px #000;
+                border-top-width: 9px;
+                border-bottom-width: 9px;
+                border-top-color: transparent;
+                border-left-color: transparent;
+                border-right-color: transparent;
+                position: absolute;
+                right: 15px;
+                top: -2px;
+                cursor: pointer;
+            }
+            .minus{
+                border-bottom-color: transparent;
+                border-top-color: #000;
+                top: auto;
+                bottom: -2px;
+            }
+        }
+        .ticket-num{
+            font-family: 'robotobold';
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 25px;
+        }
+    }
+    .small{
+        width: 115px;
+        float: left;
+        margin-right: 9px;
+    }
+    .middle{
+        width: 340px;
+    }
+    div.checkbox{
+        font-size: 12px;
+        font-family: 'robotolight';
+        margin: 22px 0 18px;
+    }
+    .requst{
+        float: left;
+        line-height: 36px;
     }
 }

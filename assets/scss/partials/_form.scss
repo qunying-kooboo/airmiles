@@ -1,0 +1,116 @@
+input,select,textarea,button{
+    margin: 0;
+    padding: 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 0;
+    line-height: normal;
+}
+
+select, input[type="text"], input[type="password"] {
+    padding:8px 10px;
+    font-size: 12px;
+    outline: none;
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.75);
+    font-family: 'robotolight';
+}
+
+input[type="text"], input[type="password"] {
+    @include box-sizing(border-box);
+    width: 100%;
+    text-overflow: ellipsis;
+}
+
+textarea {
+    padding: 8px 10px;
+    overflow: auto;
+    resize: none;
+    font-size: 12px;
+    height: 77px;
+    outline: none;
+    width: 100%;
+    border-radius: 3px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.75);
+    @include box-sizing(border-box);
+    font-family: 'robotolight';
+    text-indent: 0;
+}
+
+input[type="button"],.btn{
+    color: #fff; 
+    font-family: 'robotoregular';
+    font-size: 12px;
+    border-radius: 3px; 
+    background-clip: padding-box; 
+    background-color: #0071bb; 
+    border: 0 none;
+    padding: 10px 23px;
+    display: inline-block;
+}
+
+.btn{
+    padding: 9px 23px;
+}
+
+.btn2{
+    text-transform: uppercase;
+    color: #0071bd; 
+    font-family: "robotomedium";
+    font-size: 18px;
+    border: solid 3px #0072bd;
+    padding: 4px 12px;
+    display: inline-block;
+}
+
+.form{
+    input{
+        margin-bottom: 8px;
+    }
+    textarea{
+        margin-bottom: 3px;
+    }
+    select{
+        padding: 4px 10px ;
+        margin-bottom: 8px;
+        font-family: 'robotobold';
+        color: #000;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .error{
+        .input-text{
+            border-color: #df0000;
+            box-shadow: 0 1px 1px rgba(0,0,0,.75); 
+        }
+    }
+}
+
+.checkbox{
+    background: url(images/checkbox.png) no-repeat 0 0;
+    .checkbox{
+        width: 17px;
+        height: 17px;
+        float: left;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+    &.checked{
+        background: url(images/checkbox-check.png) no-repeat 0 0;
+    }
+}
+
+.requst{
+    color: #f00;
+    font-size: 12px;
+    font-family: 'robotoregular';
+}

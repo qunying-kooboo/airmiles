@@ -56,66 +56,216 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 5, scss/partials/_base.scss */
 body {
-  background: #1b1b1b url(images/bg.jpg) no-repeat center 0;
   font-size: 12px;
   color: #fff;
-  line-height: 1.5; }
+  line-height: 1.5;
+  background-color: #1b1b1b;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(38%, rgba(255, 255, 255, 0.001)), color-stop(100%, rgba(255, 255, 255, 0.061)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.001) 38%, rgba(255, 255, 255, 0.061) 100%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.001) 38%, rgba(255, 255, 255, 0.061) 100%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.001) 38%, rgba(255, 255, 255, 0.061) 100%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.001) 38%, rgba(255, 255, 255, 0.061) 100%); }
 
-/* line 12, scss/partials/_base.scss */
+/* line 13, scss/partials/_base.scss */
+.container {
+  background: url(images/bg.jpg) no-repeat center 0; }
+
+/* line 17, scss/partials/_base.scss */
+.wrap-inner {
+  width: 980px;
+  margin: 0 auto; }
+
+/* line 22, scss/partials/_base.scss */
 a {
   text-decoration: none;
   cursor: pointer; }
 
+/* line 27, scss/partials/_base.scss */
+img {
+  display: inline-block;
+  max-width: 100%;
+  font-size: 0; }
+
+/* line 33, scss/partials/_base.scss */
+.text-right {
+  text-align: right; }
+
 @font-face {
   font-family: 'robotoregular';
   src: url("font/roboto-regular-webfont.eot");
-  src: url("font/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("font/roboto-regular-webfont.woff2") format("woff2"), url("font/roboto-regular-webfont.woff") format("woff"), url("font/roboto-regular-webfont.ttf") format("truetype"), url("font/roboto-regular-webfont.svg#robotoregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'robotocondensed';
-  src: url("font/roboto-condensed-webfont.eot");
-  src: url("font/roboto-condensed-webfont.eot?#iefix") format("embedded-opentype"), url("font/roboto-condensed-webfont.woff2") format("woff2"), url("font/roboto-condensed-webfont.woff") format("woff"), url("font/roboto-condensed-webfont.ttf") format("truetype"), url("font/roboto-condensed-webfont.svg#robotocondensed") format("svg");
+  src: url("font/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("font/roboto-regular-webfont.woff") format("woff"), url("font/roboto-regular-webfont.ttf") format("truetype"), url("font/roboto-regular-webfont.svg#robotoregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'robotomedium';
   src: url("font/roboto-medium-webfont.eot");
-  src: url("font/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("font/roboto-medium-webfont.woff2") format("woff2"), url("font/roboto-medium-webfont.woff") format("woff"), url("font/roboto-medium-webfont.ttf") format("truetype"), url("font/roboto-medium-webfont.svg#robotomedium") format("svg");
+  src: url("font/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("font/roboto-medium-webfont.woff") format("woff"), url("font/roboto-medium-webfont.ttf") format("truetype"), url("font/roboto-medium-webfont.svg#robotomedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotolight';
+  src: url("font/roboto-light-webfont.eot");
+  src: url("font/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("font/roboto-light-webfont.woff") format("woff"), url("font/roboto-light-webfont.ttf") format("truetype"), url("font/roboto-light-webfont.svg#robotolight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotobold';
+  src: url("font/roboto-bold-webfont.eot");
+  src: url("font/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("font/roboto-bold-webfont.woff") format("woff"), url("font/roboto-bold-webfont.ttf") format("truetype"), url("font/roboto-bold-webfont.svg#robotobold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotocondensed';
+  src: url("font/roboto-condensed-webfont.eot");
+  src: url("font/roboto-condensed-webfont.eot?#iefix") format("embedded-opentype"), url("font/roboto-condensed-webfont.woff") format("woff"), url("font/roboto-condensed-webfont.ttf") format("truetype"), url("font/roboto-condensed-webfont.svg#robotocondensed") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'roboto_condensedregular';
   src: url("font/robotocondensed-regular-webfont.eot");
-  src: url("font/robotocondensed-regular-webfont.eot?#iefix") format("embedded-opentype"), url("font/robotocondensed-regular-webfont.woff2") format("woff2"), url("font/robotocondensed-regular-webfont.woff") format("woff"), url("font/robotocondensed-regular-webfont.ttf") format("truetype"), url("font/robotocondensed-regular-webfont.svg#roboto_condensedregular") format("svg");
+  src: url("font/robotocondensed-regular-webfont.eot?#iefix") format("embedded-opentype"), url("font/robotocondensed-regular-webfont.woff") format("woff"), url("font/robotocondensed-regular-webfont.ttf") format("truetype"), url("font/robotocondensed-regular-webfont.svg#roboto_condensedregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'roboto_condensedlight';
   src: url("font/robotocondensed-light-webfont.eot");
-  src: url("font/robotocondensed-light-webfont.eot?#iefix") format("embedded-opentype"), url("font/robotocondensed-light-webfont.woff2") format("woff2"), url("font/robotocondensed-light-webfont.woff") format("woff"), url("font/robotocondensed-light-webfont.ttf") format("truetype"), url("font/robotocondensed-light-webfont.svg#roboto_condensedlight") format("svg");
+  src: url("font/robotocondensed-light-webfont.eot?#iefix") format("embedded-opentype"), url("font/robotocondensed-light-webfont.woff") format("woff"), url("font/robotocondensed-light-webfont.ttf") format("truetype"), url("font/robotocondensed-light-webfont.svg#roboto_condensedlight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
-/* line 2, scss/partials/_layout.scss */
-.wrap-inner {
-  width: 980px;
-  margin: 0 auto; }
+/* line 1, scss/partials/_form.scss */
+input, select, textarea, button {
+  margin: 0;
+  padding: 0; }
+
+/* line 6, scss/partials/_form.scss */
+input[type="radio"], input[type="checkbox"] {
+  margin: 0;
+  line-height: normal; }
+
+/* line 11, scss/partials/_form.scss */
+select, input[type="text"], input[type="password"] {
+  padding: 8px 10px;
+  font-size: 12px;
+  outline: none;
+  display: inline-block;
+  vertical-align: middle;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.75);
+  font-family: 'robotolight'; }
+
+/* line 24, scss/partials/_form.scss */
+input[type="text"], input[type="password"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  text-overflow: ellipsis; }
+
+/* line 30, scss/partials/_form.scss */
+textarea {
+  padding: 8px 10px;
+  overflow: auto;
+  resize: none;
+  font-size: 12px;
+  height: 77px;
+  outline: none;
+  width: 100%;
+  border-radius: 3px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.75);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'robotolight';
+  text-indent: 0; }
+
+/* line 47, scss/partials/_form.scss */
+input[type="button"], .btn {
+  color: #fff;
+  font-family: 'robotoregular';
+  font-size: 12px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  background-color: #0071bb;
+  border: 0 none;
+  padding: 10px 23px;
+  display: inline-block; }
+
+/* line 59, scss/partials/_form.scss */
+.btn {
+  padding: 9px 23px; }
+
+/* line 63, scss/partials/_form.scss */
+.btn2 {
+  text-transform: uppercase;
+  color: #0071bd;
+  font-family: "robotomedium";
+  font-size: 18px;
+  border: solid 3px #0072bd;
+  padding: 4px 12px;
+  display: inline-block; }
+
+/* line 74, scss/partials/_form.scss */
+.form input {
+  margin-bottom: 8px; }
+/* line 77, scss/partials/_form.scss */
+.form textarea {
+  margin-bottom: 3px; }
+/* line 80, scss/partials/_form.scss */
+.form select {
+  padding: 4px 10px;
+  margin-bottom: 8px;
+  font-family: 'robotobold';
+  color: #000;
+  font-size: 16px;
+  font-weight: bold; }
+/* line 89, scss/partials/_form.scss */
+.form .error .input-text {
+  border-color: #df0000;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.75); }
+
+/* line 96, scss/partials/_form.scss */
+.checkbox {
+  background: url(images/checkbox.png) no-repeat 0 0; }
+  /* line 98, scss/partials/_form.scss */
+  .checkbox .checkbox {
+    width: 17px;
+    height: 17px;
+    float: left;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    margin-right: 15px;
+    margin-bottom: 0; }
+  /* line 107, scss/partials/_form.scss */
+  .checkbox.checked {
+    background: url(images/checkbox-check.png) no-repeat 0 0; }
+
+/* line 112, scss/partials/_form.scss */
+.requst {
+  color: #f00;
+  font-size: 12px;
+  font-family: 'robotoregular'; }
 
 /* line 1, scss/partials/_main.scss */
 header {
   margin-bottom: 70px; }
-  /* line 19, scss/partials/_base.scss */
+  /* line 39, scss/partials/_base.scss */
   header:before, header:after {
     content: " ";
     /* 1 */
     display: table;
     /* 2 */ }
-  /* line 23, scss/partials/_base.scss */
+  /* line 43, scss/partials/_base.scss */
   header:after {
     clear: both; }
 
@@ -164,32 +314,36 @@ header {
     /* line 46, scss/partials/_main.scss */
     .nav a:first-child {
       background: none; }
+    /* line 49, scss/partials/_main.scss */
+    .nav a:hover, .nav a.current {
+      color: #2c2e30; }
 
-/* line 52, scss/partials/_main.scss */
+/* line 55, scss/partials/_main.scss */
 .page-title {
   font-size: 20px;
   margin-bottom: 50px;
   font-family: 'roboto_condensedregular'; }
 
-/* line 58, scss/partials/_main.scss */
+/* line 61, scss/partials/_main.scss */
 .disclaim-cont {
   font-size: 14px;
   line-height: 24px;
   font-family: 'roboto_condensedlight';
   padding-bottom: 60px; }
-  /* line 63, scss/partials/_main.scss */
+  /* line 66, scss/partials/_main.scss */
   .disclaim-cont p {
     margin-bottom: 20px; }
 
-/* line 68, scss/partials/_main.scss */
+/* line 71, scss/partials/_main.scss */
 footer {
   background-color: #0071bb;
   margin-top: 35px;
   min-height: 120px; }
-  /* line 72, scss/partials/_main.scss */
-  footer .wrap-inner {
-    position: relative; }
   /* line 75, scss/partials/_main.scss */
+  footer .wrap-inner {
+    position: relative;
+    background: url(images/shadow-footer.png) no-repeat center top; }
+  /* line 79, scss/partials/_main.scss */
   footer .copyright, footer .bottom-nav {
     font-family: 'robotoregular';
     color: rgba(0, 0, 0, 0.7);
@@ -199,25 +353,179 @@ footer {
     position: absolute;
     left: 0;
     bottom: 25px; }
-  /* line 85, scss/partials/_main.scss */
+  /* line 89, scss/partials/_main.scss */
   footer .bottom-nav {
     left: auto;
     right: -40px; }
-    /* line 88, scss/partials/_main.scss */
+    /* line 92, scss/partials/_main.scss */
     footer .bottom-nav a {
       padding-left: 25px;
       color: rgba(0, 0, 0, 0.7); }
-      /* line 91, scss/partials/_main.scss */
+      /* line 95, scss/partials/_main.scss */
       footer .bottom-nav a:hover {
         color: rgba(221, 221, 221, 0.7); }
-  /* line 96, scss/partials/_main.scss */
+  /* line 100, scss/partials/_main.scss */
   footer .logo-bottom {
     text-align: center;
     height: 120px;
     line-height: 120px; }
-    /* line 100, scss/partials/_main.scss */
+    /* line 104, scss/partials/_main.scss */
     footer .logo-bottom a:first-child {
       margin-right: 25px; }
-    /* line 103, scss/partials/_main.scss */
+    /* line 107, scss/partials/_main.scss */
     footer .logo-bottom img {
       vertical-align: middle; }
+
+/* line 39, scss/partials/_base.scss */
+.main .wrap-inner:before, .main .wrap-inner:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+/* line 43, scss/partials/_base.scss */
+.main .wrap-inner:after {
+  clear: both; }
+
+/* line 119, scss/partials/_main.scss */
+.wgt-block {
+  width: 464px;
+  float: right;
+  font-size: 14px;
+  font-family: 'roboto_condensedlight'; }
+  /* line 124, scss/partials/_main.scss */
+  .wgt-block .page-title {
+    font-size: 22px; }
+  /* line 127, scss/partials/_main.scss */
+  .wgt-block .tip-title {
+    line-height: 24px;
+    margin-bottom: 45px; }
+    /* line 130, scss/partials/_main.scss */
+    .wgt-block .tip-title a {
+      color: #0072bd; }
+
+/* line 136, scss/partials/_main.scss */
+.bevestiging-wgt {
+  min-height: 350px; }
+  /* line 138, scss/partials/_main.scss */
+  .bevestiging-wgt .page-title {
+    margin-bottom: 20px; }
+  /* line 141, scss/partials/_main.scss */
+  .bevestiging-wgt .tip-title {
+    margin-bottom: 25px; }
+  /* line 144, scss/partials/_main.scss */
+  .bevestiging-wgt .tip-title2 {
+    letter-spacing: -0.01px; }
+
+/* line 149, scss/partials/_main.scss */
+.top-moment {
+  clear: both;
+  margin-bottom: 5px; }
+  /* line 39, scss/partials/_base.scss */
+  .top-moment:before, .top-moment:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  /* line 43, scss/partials/_base.scss */
+  .top-moment:after {
+    clear: both; }
+  /* line 153, scss/partials/_main.scss */
+  .top-moment ul {
+    margin-left: -23px;
+    margin-right: -23px; }
+    /* line 156, scss/partials/_main.scss */
+    .top-moment ul li {
+      float: left;
+      background: url(../assets/images/shadow-bg1.png) no-repeat center bottom;
+      padding: 0 23px 25px; }
+  /* line 162, scss/partials/_main.scss */
+  .top-moment .page-title {
+    line-height: 20px;
+    margin-bottom: 45px; }
+
+/* line 168, scss/partials/_main.scss */
+.home-wgt {
+  padding-top: 85px;
+  min-height: 360px; }
+  /* line 171, scss/partials/_main.scss */
+  .home-wgt .title {
+    font-size: 38px;
+    line-height: 38px;
+    margin-bottom: 20px;
+    font-family: 'roboto_condensedregular'; }
+  /* line 177, scss/partials/_main.scss */
+  .home-wgt .p {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'roboto_condensedlight'; }
+  /* line 182, scss/partials/_main.scss */
+  .home-wgt .button {
+    margin-top: 65px; }
+
+/* line 188, scss/partials/_main.scss */
+.insisselen-wgt .ticket {
+  line-height: 36px; }
+  /* line 190, scss/partials/_main.scss */
+  .insisselen-wgt .ticket .ticket-box {
+    float: left;
+    position: relative;
+    width: 115px;
+    background-color: #fff;
+    border-radius: 3px;
+    height: 36px;
+    margin-bottom: 8px; }
+    /* line 198, scss/partials/_main.scss */
+    .insisselen-wgt .ticket .ticket-box .input-text {
+      border: 0 none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      float: left;
+      border-right: solid 1px #e5e5e5;
+      width: 76px;
+      margin-bottom: 0;
+      padding: 7px 10px;
+      font-family: 'robotobold';
+      color: #000;
+      font-size: 16px;
+      font-weight: bold; }
+    /* line 212, scss/partials/_main.scss */
+    .insisselen-wgt .ticket .ticket-box .plus, .insisselen-wgt .ticket .ticket-box .minus {
+      border: solid 4px #000;
+      border-top-width: 9px;
+      border-bottom-width: 9px;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      position: absolute;
+      right: 15px;
+      top: -2px;
+      cursor: pointer; }
+    /* line 224, scss/partials/_main.scss */
+    .insisselen-wgt .ticket .ticket-box .minus {
+      border-bottom-color: transparent;
+      border-top-color: #000;
+      top: auto;
+      bottom: -2px; }
+  /* line 231, scss/partials/_main.scss */
+  .insisselen-wgt .ticket .ticket-num {
+    font-family: 'robotobold';
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 25px; }
+/* line 238, scss/partials/_main.scss */
+.insisselen-wgt .small {
+  width: 115px;
+  float: left;
+  margin-right: 9px; }
+/* line 243, scss/partials/_main.scss */
+.insisselen-wgt .middle {
+  width: 340px; }
+/* line 246, scss/partials/_main.scss */
+.insisselen-wgt div.checkbox {
+  font-size: 12px;
+  font-family: 'robotolight';
+  margin: 22px 0 18px; }
+/* line 251, scss/partials/_main.scss */
+.insisselen-wgt .requst {
+  float: left;
+  line-height: 36px; }
