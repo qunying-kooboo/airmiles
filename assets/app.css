@@ -473,13 +473,14 @@ input[type="button"], .btn {
   background-color: #0071bb;
   border: 0 none;
   padding: 10px 23px;
-  display: inline-block; }
+  display: inline-block;
+  cursor: pointer; }
 
-/* line 59, scss/partials/_form.scss */
+/* line 60, scss/partials/_form.scss */
 .btn {
   padding: 9px 23px; }
 
-/* line 63, scss/partials/_form.scss */
+/* line 64, scss/partials/_form.scss */
 .btn2 {
   text-transform: uppercase;
   color: #0071bd;
@@ -489,13 +490,13 @@ input[type="button"], .btn {
   padding: 4px 12px;
   display: inline-block; }
 
-/* line 74, scss/partials/_form.scss */
+/* line 75, scss/partials/_form.scss */
 .form input {
   margin-bottom: 8px; }
-/* line 77, scss/partials/_form.scss */
+/* line 78, scss/partials/_form.scss */
 .form textarea {
   margin-bottom: 3px; }
-/* line 80, scss/partials/_form.scss */
+/* line 81, scss/partials/_form.scss */
 .form select {
   padding: 4px 10px;
   margin-bottom: 8px;
@@ -503,15 +504,15 @@ input[type="button"], .btn {
   color: #000;
   font-size: 16px;
   font-weight: bold; }
-/* line 89, scss/partials/_form.scss */
+/* line 90, scss/partials/_form.scss */
 .form .error .input-text {
   border-color: #df0000;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.75); }
 
-/* line 96, scss/partials/_form.scss */
+/* line 97, scss/partials/_form.scss */
 .checkbox {
   background: url(images/checkbox.png) no-repeat 0 0; }
-  /* line 98, scss/partials/_form.scss */
+  /* line 99, scss/partials/_form.scss */
   .checkbox .checkbox {
     width: 17px;
     height: 17px;
@@ -520,22 +521,22 @@ input[type="button"], .btn {
     filter: alpha(opacity=0);
     margin-right: 15px;
     margin-bottom: 0; }
-  /* line 107, scss/partials/_form.scss */
+  /* line 108, scss/partials/_form.scss */
   .checkbox.checked {
     background: url(images/checkbox-check.png) no-repeat 0 0; }
-  /* line 110, scss/partials/_form.scss */
+  /* line 111, scss/partials/_form.scss */
   .checkbox.checkbox2 {
     line-height: 24px;
     background: url(images/checkbox2.png) no-repeat 0 5px; }
-    /* line 113, scss/partials/_form.scss */
+    /* line 114, scss/partials/_form.scss */
     .checkbox.checkbox2 .checkbox {
       margin-right: 5px;
       margin-top: 5px; }
-    /* line 117, scss/partials/_form.scss */
+    /* line 118, scss/partials/_form.scss */
     .checkbox.checkbox2.checked {
       background: url(images/checkbox2-check.png) no-repeat 0 5px; }
 
-/* line 123, scss/partials/_form.scss */
+/* line 124, scss/partials/_form.scss */
 .requst {
   color: #f00;
   font-size: 12px;
