@@ -6,8 +6,8 @@ body{
     font-size: 12px;
     color: #fff;
     line-height: 1.5;
-    background-color: #1b1b1b ;
-    @include background-image(linear-gradient(top, rgba(255, 255, 255, .001) 38%, rgba(255, 255, 255, .061) 100%));
+    background: #292929 url(images/body_bg.png) repeat-x;
+   
 }
 
 .container{
@@ -32,6 +32,10 @@ img{
 
 .text-right{
   text-align: right;
+}
+
+.f-right{
+  float: right;
 }
 
 @mixin clearfix() {

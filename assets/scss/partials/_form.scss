@@ -107,6 +107,17 @@ input[type="button"],.btn{
     &.checked{
         background: url(images/checkbox-check.png) no-repeat 0 0;
     }
+    &.checkbox2{
+        line-height: 24px;
+        background:  url(images/checkbox2.png) no-repeat 0 5px;
+        .checkbox{
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+        &.checked{
+            background: url(images/checkbox2-check.png) no-repeat 0 5px;
+        }        
+    }
 }
 
 .requst{
